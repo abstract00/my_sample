@@ -86,6 +86,7 @@ def get_transform():
 
 
 def train(model, criterion, optimizer, history, num_epochs, train_loader, valid_loader, device, early_stopping):
+    print(f"device: {device}")
     base_size = len(history)
     best_loss = torch.inf
     best_params = {}
